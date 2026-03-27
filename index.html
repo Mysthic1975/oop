@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Rechteck Rechner PRO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-brand">Rechteck Rechner PRO</span>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" id="nav-basic">Basis Modus</a>
+                <a href="#" class="nav-link" id="nav-expert">Experten Modus</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container view active" id="basic-view">
+        <h1>Rechteck-Rechner</h1>
+        <div class="content">
+            <div class="controls">
+                <h2>Eingabe</h2>
+                <form id="rechteck-form">
+                    <div class="input-group">
+                        <label for="startX">Start X:</label>
+                        <input type="number" id="startX" value="100" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="startY">Start Y:</label>
+                        <input type="number" id="startY" value="100" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="breite">Breite:</label>
+                        <input type="number" id="breite" value="240" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="hoehe">Höhe:</label>
+                        <input type="number" id="hoehe" value="240" required>
+                    </div>
+                    <button type="submit">Berechnen & Zeichnen</button>
+                </form>
+
+                <h2>Ergebnisse</h2>
+                <div id="ergebnis">
+                    </div>
+            </div>
+            
+            <div class="canvas-container">
+                <h2>Zeichnung</h2>
+                <div id="zeichnungsflaeche">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container view" id="expert-view">
+        <h1>Experten Modus</h1>
+        <div class="content expert-layout">
+            <div class="controls expert-controls">
+                
+                <h2>Eingabe Rechteck A (Blau)</h2>
+                <div class="expert-input-grid">
+                    <div class="input-group">
+                        <label for="startX_A">Start X:</label>
+                        <input type="number" id="startX_A" value="50">
+                    </div>
+                    <div class="input-group">
+                        <label for="startY_A">Start Y:</label>
+                        <input type="number" id="startY_A" value="50">
+                    </div>
+                    <div class="input-group">
+                        <label for="breite_A">Breite:</label>
+                        <input type="number" id="breite_A" value="200">
+                    </div>
+                    <div class="input-group">
+                        <label for="hoehe_A">Höhe:</label>
+                        <input type="number" id="hoehe_A" value="150">
+                    </div>
+                </div>
+
+                <h2>Eingabe Rechteck B (Grün)</h2>
+                <div class="expert-input-grid">
+                    <div class="input-group">
+                        <label for="startX_B">Start X:</label>
+                        <input type="number" id="startX_B" value="150">
+                    </div>
+                    <div class="input-group">
+                        <label for="startY_B">Start Y:</label>
+                        <input type="number" id="startY_B" value="100">
+                    </div>
+                    <div class="input-group">
+                        <label for="breite_B">Breite:</label>
+                        <input type="number" id="breite_B" value="180">
+                    </div>
+                    <div class="input-group">
+                        <label for="hoehe_B">Höhe:</label>
+                        <input type="number" id="hoehe_B" value="180">
+                    </div>
+                </div>
+
+                <h2>Experten Operationen</h2>
+                <div class="operation-group">
+                    <div class="input-group">
+                        <label for="expScaleFactor">Skalierungsfaktor (Ganzzahl):</label>
+                        <input type="number" id="expScaleFactor" value="2" min="1">
+                    </div>
+                    <div class="input-group">
+                        <label for="expRotateCorner">Ankerpunkt Drehung:</label>
+                        <select id="expRotateCorner">
+                            <option value="p1">A: Links-Oben</option>
+                            <option value="p2">A: Rechts-Unten</option>
+                            <option value="p1.x,p2.y">A: Links-Unten</option>
+                            <option value="p2.x,p1.y">A: Rechts-Oben</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" class="btn-expert" id="btn-schnitt">Schnittfläche Berechnen</button>
+                <button type="button" class="btn-expert" id="btn-skaliere">Skaliere Rechteck A</button>
+                <button type="button" class="btn-expert" id="btn-drehe">Drehe Rechteck A (90°)</button>
+                
+                <div id="ergebnis-expert" style="margin-top: 1rem;">
+                    </div>
+            </div>
+            
+            <div class="canvas-container">
+                <h2>Visualisierung (A + B + Schnitt)</h2>
+                <div id="expert-flaeche" class="zeichnungsflaeche-grid">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
