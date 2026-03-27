@@ -37,6 +37,6 @@ Das Programm bietet zwei Ansichten, zwischen denen nahtlos gewechselt werden kan
    java Main
 
 3. Öffne deinen Webbrowser und navigiere zu:
-   https://localhost:8080
+   https://localhost:8443
 
 4. Um den Server zu beenden, drücke in der Server-Konsole einfach die ENTER-Taste.
