@@ -1,0 +1,8 @@
+
+# Ignore IDE and build specific files
+.vscode/
+bin/
+*.class
+
+# Ignore sensitive certificate files
+.cert/

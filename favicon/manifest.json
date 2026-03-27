@@ -1,0 +1,41 @@
+{
+ "name": "Rechteck Rechner PRO",
+ "icons": [
+  {
+   "src": "/favicon/favicon/favicon-96x96.png",
+   "sizes": "96x96",
+   "type": "image/png",
+   "density": "1.5"
+  },
+  {
+   "src": "/favicon/android-icon-192x192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "density": "3.0"
+  },
+  {
+   "src": "/favicon/ms-icon-70x70.png",
+   "sizes": "70x70",
+   "type": "image/png",
+   "density": "1.5"
+  },
+  {
+   "src": "/favicon/ams-icon-144x144.png",
+   "sizes": "144x144",
+   "type": "image/png",
+   "density": "2.0"
+  },
+  {
+   "src": "/favicon/ms-icon-150x150.png",
+   "sizes": "150x150",
+   "type": "image/png",
+   "density": "3.0"
+  },
+  {
+   "src": "/favicon/ms-icon-310x310.png.png",
+   "sizes": "310x310",
+   "type": "image/png",
+   "density": "4.0"
+  }
+ ]
+}
